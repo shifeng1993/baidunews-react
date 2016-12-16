@@ -1,0 +1,346 @@
+* {
+  font-family:'Microsoft YaHei';
+}
+html,body,#app{
+  width: 100%;
+  height: 100%;
+}
+body,#app{
+  margin:0;
+  padding:0;
+}
+
+
+
+.admin-component{
+  .center {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  a {
+    color: #000;
+  }
+
+  a:hover {
+    color: #5dabf0;
+  }
+
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    position: relative;
+    margin-bottom: 0;
+    height: 70px;
+    overflow: visible;
+    border-width: 0;
+    border-radius: 0;
+    background: #5dabf0;
+    border-bottom: 2px #5dabf0 solid;
+  }
+
+  .logo {
+    float: left;
+    padding: 15px 30px;
+  }
+
+  .logo p {
+    font-family: 微软雅黑;
+    font-size: 28px;
+  }
+
+  .user {
+    float: right;
+    padding: 21px;
+    text-align: center;
+  }
+
+  .user a {
+    line-height: 16px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  .user a:hover {
+    background: #fff;
+    text-decoration: none;
+  }
+
+
+  /*头部结束*/
+
+
+  /*正文开始*/
+
+  article {
+    position: relative;
+    margin-top: 2px;
+    width: 100%;
+  }
+
+
+  /*导航开始*/
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #c7bbd8;
+    border-bottom: 1px #c7bbd8 solid;
+    text-align: center;
+  }
+
+  .nav-close {
+    text-align: center;
+    line-height: 40px;
+    margin-left: 90%;
+    font-size: 4vw;
+    display: none;
+  }
+
+  .nav-title {
+    display: block;
+    height: 25px;
+    overflow: hidden;
+    border-radius: 2px 2px 0 0;
+    border: 1px solid #c7bbd8;
+    background: #eae7ef;
+    font-family: 微软雅黑;
+    font-weight: bold;
+  }
+
+
+  /*导航结束*/
+
+
+  /*选项卡开始*/
+
+  .info-title {
+    color: #573e7e;
+    background-color: #FFF;
+    padding: 0;
+    height: 35px;
+    overflow: hidden;
+    border: 1px solid #c7bbd8;
+    border-color: #dddddd;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    line-height: 35px;
+    margin-top: 2px;
+  }
+
+  .info-title:hover {
+    background: #77ccff;
+  }
+
+  .info-title-add {
+    background-color: #5dabf0;
+    color: #fff
+  }
+
+  .info {
+    position: absolute;
+    top: 0;
+    left: 204px;
+    border: 1px solid #dddddd;
+    height: 100%;
+    width: 80%;
+  }
+
+  .info-container {
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .add-news,
+  .del-news {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 15px;
+    text-align: center;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  tbody tr td div {
+    padding: 3px 8px;
+    font-size: 12px;
+    font-family: 'Microsoft YaHei';
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  .table {
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .table thead tr th {
+    text-align: center;
+  }
+
+  .addnews-box,
+  .updatenews-box {
+    padding: 10px;
+    position: fixed;
+    width: 600px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+    z-index: 9999;
+    display: none;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+  }
+
+  .addnews-box label,
+  .updatenews-box label {
+    font-size: 14px;
+  }
+
+  .title,
+  .img,
+  .content,
+  .time,
+  .desc,
+  .newstype {
+    width: 80%;
+    margin-left: 12px;
+    padding: 3px;
+  }
+
+  .content {
+    height: 100px;
+  }
+
+  .time {
+    margin-left: 40px;
+  }
+
+  .addtime,.updatetime{
+    width: 50%;
+    margin-left: 40px;
+    direction: ltr;
+  }
+
+  .newstype {
+    width: 30%;
+  }
+
+  #addtype {
+    margin-left: 20px;
+  }
+
+  .box-btn {
+    margin: 0px 20px;
+  }
+
+  .close {
+    padding: 3px 8px;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-left: 15px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .addnews-box .wrap,
+  .updatenews-box .wrap {
+    padding: 20px;
+  }
+
+  .mask {
+    background-color: gray;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    z-index: 9900;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+  }
+
+
+  /*选项卡结束*/
+
+
+  /*正文结束*/
+
+
+  /*底部开始*/
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    padding-top: 8px;
+    width: 100%;
+    height: 24px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    background: #fff
+  }
+
+  footer span {
+    float: right;
+    line-height: 6px;
+    display: block;
+  }
+
+
+  /*底部结束*/
+
+  @media screen and (max-width:639px) {
+    nav {
+      top: -75px;
+      z-index: 9999;
+      width: 100%;
+      background: #fff;
+      display: none;
+    }
+    .nav-close {
+      display: block;
+    }
+    .nav-title {
+      display: none;
+    }
+    .info {
+      left: 0;
+      width: 98%;
+    }
+    .logo p {
+      font-size: 22px;
+    }
+    #headernav {
+      display: block;
+    }
+    footer {
+      display: none;
+    }
+  }
+
+}
+
+
